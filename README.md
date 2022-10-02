@@ -4,6 +4,8 @@ This tools is a CLI built to help with setting up a new linux machine to be read
 
 It will install and verify packages and tools to be installed on your system as well as assist in configuring some basic system settings.
 
+![example of the verify command](/verify.png "Verify Command")
+
 ## What is included:
 
 **Packages:**
