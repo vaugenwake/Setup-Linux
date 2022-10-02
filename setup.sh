@@ -360,7 +360,7 @@ function install_system() {
 function help_me() {
     printf "\n${GREEN}${bold}Welcome to the linux setup tool.${NR}\n"
     printf "\nThis tool helps you to setup and check all the basic tools for your system are installed and configured.\n\n"
-    printf "${bold}Usage: ${NR}./setup.sh [command]\n"
+    printf "${bold}Usage: ${NR}linux-setup [command]\n"
 
     printf "\nversion  Version number\n"
     printf "help       Help menu\n"
@@ -376,8 +376,8 @@ function uninstall() {
 
 # Execute command user requested
 case "$1" in
-    -v | --version ) echo $VERSION ;;
-    -h | help ) help_me ;;
+    version ) echo $VERSION ;;
+    help ) help_me ;;
     install ) install_system ;;
     verify ) verify_system ;;
     uninstall ) unstall ;;

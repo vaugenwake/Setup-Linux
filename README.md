@@ -41,7 +41,9 @@ linux-setup help
 ```
 
 Execute
-`./setup.sh [command]`
+```BASH
+linux-setup [command]
+```
 
 Commands
 
