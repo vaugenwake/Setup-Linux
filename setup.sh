@@ -363,9 +363,15 @@ function help_me() {
     printf "${bold}Usage: ${NR}./setup.sh [command]\n"
 
     printf "\nversion  Version number\n"
-    printf "help     Help menu\n"
-    printf "install  Install/reinstall a system\n"
-    printf "verify   Check a systems configuration and highlight any issues\n\n"
+    printf "help       Help menu\n"
+    printf "install    Install/reinstall a system\n"
+    printf "verify     Check a systems configuration and highlight any issues\n"
+    printf "uninstall  Uninstall linux-setup tool from system (may require sudo)\n\n"
+}
+
+function uninstall() {
+    rm -- "$0"
+    exit 0;
 }
 
 # Execute command user requested
@@ -374,6 +380,7 @@ case "$1" in
     -h | help ) help_me ;;
     install ) install_system ;;
     verify ) verify_system ;;
+    uninstall ) unstall ;;
     * ) help_me ;;
 esac
 

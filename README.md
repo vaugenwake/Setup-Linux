@@ -33,7 +33,12 @@ It will install and verify packages and tools to be installed on your system as 
 To use this tool follow the commands below:
 
 Download
-`curl -o ./setup.sh https://raw.githubusercontent.com/vaugenwake/Setup-Linux/main/setup.sh && chmod +x setup.sh`
+```BASH
+curl -o ./setup.sh https://raw.githubusercontent.com/vaugenwake/Setup-Linux/main/setup.sh
+chmod +x setup.sh
+mv setup.sh /usr/local/bin/linux-setup
+linux-setup help
+```
 
 Execute
 `./setup.sh [command]`
@@ -46,3 +51,4 @@ Commands
 | help | Display help menu |
 | verify | Check system health |
 | install | Install/Reinstall a new system |
+| uninstall | Uninstall linux-setup tool from system |
