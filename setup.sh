@@ -380,7 +380,7 @@ case "$1" in
     help ) help_me ;;
     install ) install_system ;;
     verify ) verify_system ;;
-    uninstall ) unstall ;;
+    uninstall ) uninstall ;;
     * ) help_me ;;
 esac
 
